@@ -1,0 +1,25 @@
+<form (ngSubmit)="Ajoutuser()">
+  <div class="mb-3">
+    <label for="email">Email</label>
+    <input type="text" class="form-control" id="email" name="email" placeholder="Email" [(ngModel)]="user.email">
+  </div>
+
+  <div class="mb-3">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" name="password" placeholder="Password" [(ngModel)]="user.password">
+  </div>
+
+  <div class="mb-3">
+    <label for="firstname">First Name</label>
+    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name" [(ngModel)]="user.firstname">
+  </div>
+
+  <div class="mb-3">
+    <label for="lastname">Last Name</label>
+    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name" [(ngModel)]="user.lastname">
+  </div>
+
+  <div>
+    <button type="submit" class="btn btn-primary">Register</button>
+  </div>
+</form>
